@@ -1,38 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
 .App {
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  font-size: 90px;
+  font-weight: 700;
+  font-style: italic;
+  color: rgb(237, 39, 39);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header_our_love {
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  color: white;
+  margin: 0;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation_container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.becetti_list {
+  color: aliceblue;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link {
+  list-style-type: none;
+}
+
+.link + .link {
+  padding-left: 15px;
+}
+
+a:link {
+  color: rgb(40, 43, 238);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(40, 43, 238);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(113, 115, 216);
+}
+
+a:active {
+  color: rgb(113, 115, 216);
+}
+
+.background_image {
+  background-image: url("./assets/images/universe2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
 }
